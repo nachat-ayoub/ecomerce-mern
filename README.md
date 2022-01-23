@@ -1,4 +1,4 @@
-# Getting Started with The MERn Stack Ecommerce App.
+# Getting Started with The MERN Stack Ecommerce App.
 # mern-ecom
 # mern-ecom
 # ecomerce-mern
