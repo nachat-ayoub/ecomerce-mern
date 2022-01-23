@@ -23,9 +23,11 @@ app.use(cors());
 
 // Routes :
 const AuthRoutes = require("./routes/authRoutes");
+const ProductsRoutes = require("./routes/productsRoutes");
 
 // Start : Login Page And Logic :
-app.use("/", AuthRoutes);
+app.use("/api", AuthRoutes);
+app.use("/api/products", ProductsRoutes);
 
 // PORT :
 const PORT = process.env.PORT || 9000;

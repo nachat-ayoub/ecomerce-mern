@@ -5,6 +5,15 @@ const ProductSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  rating: [
+    {
+      rate: { type: mongoose.Types.Decimal128 },
+      user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    },
+  ],
   price: {
     type: Number,
     required: true,

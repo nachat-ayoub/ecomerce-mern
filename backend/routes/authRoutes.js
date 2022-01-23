@@ -3,12 +3,11 @@ const router = Router();
 
 // Controllers
 const authController = require("../controllers/authController");
-const { requireAuth } = require("../middlewares/userAuth");
+const { adminAuth } = require("../middlewares/requireAuth");
 
 // POST ROUTES
-router.get("/api", requireAuth, authController.api);
-router.post("/signup", authController.signup_post);
-router.post("/login", authController.login_post);
+router.post("/signup", authController.signup);
+router.post("/verify", adminAuth, authController.verify);
 
 // Exporting the route so we can use it in server.js.
 module.exports = router;

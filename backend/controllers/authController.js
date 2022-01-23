@@ -3,17 +3,7 @@ const User = require("../models/User");
 // const auth = require("../firebaseConfig");
 const { createUserWithEmailAndPassword } = require("firebase/auth");
 
-module.exports.api = async (req, res) => {
-  try {
-    res.status(200).json({
-      message: "success",
-      data: "user found in!",
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-module.exports.signup_post = async (req, res) => {
+module.exports.signup = async (req, res) => {
   try {
     const { username, email, uid } = req.body;
     if (username && email && uid) {
@@ -26,6 +16,6 @@ module.exports.signup_post = async (req, res) => {
   }
 };
 
-module.exports.login_post = (req, res) => {
-  res.json("login");
+module.exports.verify = (req, res) => {
+  res.json({ msg: "you are an admin", isAdmin: true });
 };
