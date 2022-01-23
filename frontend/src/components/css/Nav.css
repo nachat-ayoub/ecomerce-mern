@@ -1,0 +1,26 @@
+nav {
+  height: 90px;
+  box-shadow: 0px 2px 15px -6px rgba(0, 0, 0, 0.411);
+  background-color: #fff;
+}
+.navbar-nav {
+  justify-content: stretch !important;
+}
+.nav-link {
+  position: relative;
+  width: 90px;
+}
+.nav-link::before {
+  content: "";
+  background-color: rgb(255, 251, 8);
+  position: absolute;
+  width: 0;
+  height: 8px;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+}
+.nav-link:hover::before {
+  width: 100%;
+  transition: 0.3s;
+}

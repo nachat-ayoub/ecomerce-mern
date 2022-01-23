@@ -1,0 +1,38 @@
+.header {
+  background-image: url("https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNsb3RoZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  position: relative;
+  height: 30rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 70%;
+  display: grid;
+  place-items: center;
+}
+.header::before,
+.header::after {
+  content: "";
+  position: absolute;
+}
+
+.header::before {
+  bottom: 0;
+  left: 0;
+  border-bottom: 70px solid #ffffff;
+  border-right: 70px solid transparent;
+  height: 0;
+  width: 50%;
+}
+.header::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 70px solid #ffffff;
+  border-left: 70px solid transparent;
+  height: 0;
+  width: 50%;
+}
+.tagLine {
+  color: rgb(247, 210, 0);
+  font-size: 3rem;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.781);
+}

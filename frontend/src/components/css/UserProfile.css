@@ -1,0 +1,38 @@
+.userProfile {
+  width: 200px;
+  height: 100%;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar img {
+  height: 100%;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.usernam {
+  font-size: 0.7rem;
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .icon {
+  font-size: 2rem;
+}
+.cart .counter {
+  font-size: 0.8rem;
+  background-color: rgb(255, 251, 8);
+  width: fit-content;
+  height: fit-content;
+  padding: 3px 7px;
+  border-radius: 50%;
+}
